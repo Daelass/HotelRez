@@ -10,6 +10,7 @@ namespace Project.ENTITIES.Models
     {// resepsiyonist 
         public string UserName { get; set; }// kullanıcı adı
         public string Password { get; set; }// şifre
+        public int? EmployeeID { get; set; }
         // relational 
         public virtual ReceptionistProfile ReceptionistProfile { get; set; }
         public virtual List<Guest> Guests { get; set; }// müşteri listesi bire çok ilşkiden dolayı burada

@@ -54,6 +54,10 @@
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\RoomHousekeeper.cs" />
     <Compile Include="Models\RoomReservation.cs" />
+    <Compile Include="Models\RoomType.cs" />
+    <Compile Include="Models\SingleType.cs" />
+    <Compile Include="Models\StandartType.cs" />
+    <Compile Include="Models\SuitType.cs" />
     <Compile Include="Models\Waiter.cs" />
     <Compile Include="Models\RoomServiceDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
