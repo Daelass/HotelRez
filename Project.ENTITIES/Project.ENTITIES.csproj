@@ -46,7 +46,6 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FoodService.cs" />
     <Compile Include="Models\FoodServiceWaiter.cs" />
-    <Compile Include="Models\IRoomType.cs" />
     <Compile Include="Models\Guest.cs" />
     <Compile Include="Models\HouseKeeper.cs" />
     <Compile Include="Models\Receptionist.cs" />
