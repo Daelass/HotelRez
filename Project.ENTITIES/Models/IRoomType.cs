@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public  class StandartType:RoomType
-    {// aileler için düşündüm ondan dolayı 
+    interface IRoomType
+    {
+        string StandartRoom { get; set; }
+        string SingleRoom { get; set; }
+        string SuitRoom { get; set; }
+
     }
 }
