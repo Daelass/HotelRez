@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public abstract class RoomType:BaseEntity
+    public class RoomType:Room
     {
-        public decimal RoomPrice { get; set; }
+        public string TypeName { get; set; }//oda  tipi adı
+        public decimal RoomPrice { get; set; }// oda fiatı
+
+        
+
+        //relational
+        public virtual Room Room { get; set; }
+
     }
 }
