@@ -51,6 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options\BaseMap.cs" />
+    <Compile Include="Options\CompanyCustomerGuestMap.cs" />
+    <Compile Include="Options\CompanyCustomerMap.cs" />
+    <Compile Include="Options\EmployeeMap.cs" />
+    <Compile Include="Options\EmployeeProfileMap.cs" />
+    <Compile Include="Options\GuestMap.cs" />
+    <Compile Include="Options\OrderMap.cs" />
+    <Compile Include="Options\ReservationMap.cs" />
+    <Compile Include="Options\RoomMap.cs" />
+    <Compile Include="Options\RoomReservationMap.cs" />
+    <Compile Include="Options\RoomTypeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
