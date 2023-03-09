@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public class RoomType:Room
+    public class HouseKeeper:BaseEntity
     {
-        public string TypeName { get; set; }//oda  tipi adı
-        public decimal RoomPrice { get; set; }// oda fiatı
-        
-
-
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string ContactNumber { get; set; }
+       
         //relational
-
         public virtual List<Room> Rooms { get; set; }
     }
 }

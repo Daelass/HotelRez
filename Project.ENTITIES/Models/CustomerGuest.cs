@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public class CompanyCustomerGuest:BaseEntity
+    public class CustomerGuest:BaseEntity
     {// rezervasyonu yapan kişiyle kalan kişinin ilişki durumu bu class içerisinde belirtilmiştir.
-        public int CompanyCustomerID { get; set; }
+        public int CustomerID { get; set; }
         public int GuestID { get; set; }
 
         //relational
-        public virtual CompanyCustomer CompanyCustomer { get; set; }
+        public virtual Customer Customer { get; set; }
         public virtual Guest Guest { get; set; }
     }
 }

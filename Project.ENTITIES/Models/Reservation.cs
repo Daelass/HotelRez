@@ -12,9 +12,13 @@ namespace Project.ENTITIES.Models
         // rezervasyon Class'ı
         public DateTime CheckIn { get; set; }// giriş tarihi datetime olarak verdim
         public DateTime CheckOut { get; set; }// çıkış tarihi datetime olarak verdim
-   
+        public int? ReceptionID { get; set; }
+
         //relational
         public virtual List<RoomReservation> RoomReservations { get; set; }// oda rezervasyon çoka çok ilişkide listi burada
-        public virtual List<CompanyCustomer> Guests { get; set; }// ziyaretçi listem
+        public virtual Guest Guest { get; set; }
+        public virtual List<Customer> Customers { get; set; }// müşteri n rezervasyon yapabilir
+        public virtual Reception Reception { get; set; }
+        public virtual List<Order> Orders { get; set; }
     }
 }

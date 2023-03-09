@@ -16,6 +16,7 @@ namespace Project.ENTITIES.Models
         // relational
         public virtual List<Order> Orders { get; set; }
         public virtual Room Room { get; set; }
-        public virtual List<CompanyCustomerGuest> CompanyCustomerGuests { get; set; }
+        public virtual List<CustomerGuest> CustomerGuests { get; set; }
+        
     }
 }

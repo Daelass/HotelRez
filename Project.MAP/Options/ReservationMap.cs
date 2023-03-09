@@ -14,6 +14,7 @@ namespace Project.MAP.Options
             ToTable("Rezarvasyonlar");
             Property(x=>x.CheckIn).HasColumnName("Giriş Tarihi");
             Property(x=>x.CheckOut).HasColumnName("Çıkış Tarihi");
+            
         }
     }
 }

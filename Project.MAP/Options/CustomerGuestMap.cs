@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class CompanyCustomerGuestMap:BaseMap<CustomerGuest>
+    public class CustomerGuestMap : BaseMap<CustomerGuest>
     {
-        public CompanyCustomerGuestMap()
+        public CustomerGuestMap()
         {
             ToTable("Müşteri Misafirleri");
             Ignore(x => x.ID);
             HasKey(x => new
             {
-                x.CompanyCustomerID,
-                x.GuestID
+                x.GuestID,
+                x.CustomerID
             });
         }
     }

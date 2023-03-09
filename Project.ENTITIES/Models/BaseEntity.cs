@@ -10,13 +10,13 @@ namespace Project.ENTITIES.Models
     public abstract class BaseEntity
     {
         public int ID { get; set; }
-        public DateTime CreatedTime { get; set; }
-        public DateTime? ModifiedTime { get; set; }
-        public DateTime? DeletedTimee { get; set; }
+        public DateTime? CreatedDate  { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public DateTime? DeletedDate { get; set; }
         public DataStatus Status { get; set; }
         public BaseEntity()
         {
-            CreatedTime = DateTime.Now;
+            CreatedDate = DateTime.Now;
             Status = DataStatus.Inserted;
         }
     }

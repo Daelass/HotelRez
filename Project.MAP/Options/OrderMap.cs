@@ -13,7 +13,7 @@ namespace Project.MAP.Options
         {
             ToTable("Siparişler");
             Property(x =>x.OrderName).HasColumnName("Sipariş Adı");
-            Property(x =>x.OrderPrice).HasColumnName("Sipariş Fiyati");
+          
             
         }
     }

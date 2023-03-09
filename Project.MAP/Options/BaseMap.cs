@@ -8,13 +8,13 @@ using Project.ENTITIES.Models;
 
 namespace Project.MAP.Options
 {
-    public class BaseMap<T> : EntityTypeConfiguration<T> where T : BaseEntity
+    public abstract class BaseMap<T> : EntityTypeConfiguration<T> where T : BaseEntity
     {
         public BaseMap()
         {
-            Property(x => x.CreatedTime).HasColumnName("Yaratılma Tarihi");
-            Property(x => x.ModifiedTime).HasColumnName("Geliştirme Tarihi");
-            Property(x => x.DeletedTimee).HasColumnName("Silinme Tarihi");
+            Property(x => x.CreatedDate).HasColumnName("Yaratılma Tarihi");
+            Property(x => x.ModifiedDate).HasColumnName("Geliştirme Tarihi");
+            Property(x => x.DeletedDate).HasColumnName("Silinme Tarihi");
             Property(x => x.Status).HasColumnName("Veri Durumu");
         }
     }

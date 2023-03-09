@@ -31,10 +31,10 @@ namespace Project.DAL.ContextClasses
 
         }
 
-        public DbSet<CompanyCustomer> CompanyCustomer { get; set; }
-        public DbSet<CompanyCustomerGuest> CompanyCustomerGuests { get; set; }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<EmployeeProfile> EmployeeProfiles { get; set; }
+        public DbSet<Customer> CompanyCustomer { get; set; }
+        public DbSet<CustomerGuest> CompanyCustomerGuests { get; set; }
+        public DbSet<Reception> Employees { get; set; }
+        public DbSet<ReceptionProfile> EmployeeProfiles { get; set; }
         public DbSet<Guest> Guests { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
