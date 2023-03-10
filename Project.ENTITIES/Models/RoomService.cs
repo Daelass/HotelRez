@@ -10,9 +10,11 @@ namespace Project.ENTITIES.Models
     {
         public string Menu { get; set; }
         public string Beverage { get; set; }
-        public decimal Price { get; set; }
+        public decimal Price { get; set; }  
+        public int? RoomID { get; set; }
 
         // relational
-        public virtual List<Order> Orders { get; set; }
+        public virtual Room Room { get; set; }
+
     }
 }

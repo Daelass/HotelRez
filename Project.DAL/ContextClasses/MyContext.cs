@@ -40,7 +40,7 @@ namespace Project.DAL.ContextClasses
         public DbSet<Order> Orders { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Room> Rooms { get; set; }
-        public DbSet<RoomReservation> RoomReservations { get; set; }
+        public DbSet<RoomDetail> RoomReservations { get; set; }
         public DbSet<RoomType> RoomTypes { get; set; }
         public DbSet<RoomService> RoomsServices { get; set;}
         public DbSet<HouseKeeper> HouseKeepers { get; set; }

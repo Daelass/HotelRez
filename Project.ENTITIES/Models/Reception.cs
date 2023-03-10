@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 namespace Project.ENTITIES.Models
 {
     public  class Reception:BaseEntity
-    {//  resepsiyon ile profili bire bir ilşkidedir.
-        // resepsiyon ile müşteri(rezervasyon yaptıran kişi) bire çok ilişkidedir.
-        
+    {
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string EmployeeFirstName { get; set; }
+        public string EmployeeLastName { get; set; }
+        public string ReceptionNumber { get; set; }
 
-        public string UserName { get; set; }// kullanıcı adı
-        public string Password { get; set; }// şifresi
+        // relational properties
 
-        // relational
-        public virtual ReceptionProfile ReceptionProfile { get; set; }
-        public virtual List<Customer> Customers { get; set; }
-        public virtual List<Reservation> Reservations { get; set; }
+        public virtual List<Customer> Customer { get; set; } // Müşteri Listesi BireÇok ilişki sayesinde saglandı.
+        public virtual List<Reservation> Reservations { get; set; } //Recepsiyonun yaptıgı rezervasyonların Listesi BireCok ilişki ile saglandı.
 
     }
 }

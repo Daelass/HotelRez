@@ -43,16 +43,14 @@
   <ItemGroup>
     <Compile Include="Enums\DataStatus.cs" />
     <Compile Include="Models\BaseEntity.cs" />
-    <Compile Include="Models\CustomerGuest.cs" />
+    <Compile Include="Models\GuestDetail.cs" />
     <Compile Include="Models\HouseKeeper.cs" />
     <Compile Include="Models\Reception.cs" />
-    <Compile Include="Models\ReceptionProfile.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Guest.cs" />
-    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Room.cs" />
-    <Compile Include="Models\RoomReservation.cs" />
+    <Compile Include="Models\RoomDetail.cs" />
     <Compile Include="Models\RoomService.cs" />
     <Compile Include="Models\RoomType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

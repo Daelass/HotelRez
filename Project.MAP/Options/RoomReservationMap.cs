@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class RoomReservationMap:BaseMap<RoomReservation>
+    public class RoomReservationMap:BaseMap<RoomDetail>
     {
         public RoomReservationMap()
         {
