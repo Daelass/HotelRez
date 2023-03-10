@@ -20,6 +20,7 @@ namespace Project.ENTITIES.Models
         public virtual List<RoomDetail> RoomDetails { get; set; }
         public virtual List<GuestDetail> GuestDetails { get; set; }
         public virtual Customer Customer { get; set; }
+        public virtual List<RoomService> RoomServices { get; set; }
         
         
 }

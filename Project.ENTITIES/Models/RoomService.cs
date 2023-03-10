@@ -11,10 +11,13 @@ namespace Project.ENTITIES.Models
         public string Menu { get; set; }
         public string Beverage { get; set; }
         public decimal Price { get; set; }  
-        public int? RoomID { get; set; }
+        public string RoomNumber { get; set; } 
+        public int ReservationID { get; set; }
+       
 
         // relational
-        public virtual Room Room { get; set; }
+        public virtual Reservation Reservation { get; set; }
+        
 
     }
 }

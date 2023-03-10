@@ -17,7 +17,7 @@ namespace Project.ENTITIES.Models
 
         // relational properties
 
-        public virtual List<Customer> Customer { get; set; } // Müşteri Listesi BireÇok ilişki sayesinde saglandı.
+        
         public virtual List<Reservation> Reservations { get; set; } //Recepsiyonun yaptıgı rezervasyonların Listesi BireCok ilişki ile saglandı.
 
     }
