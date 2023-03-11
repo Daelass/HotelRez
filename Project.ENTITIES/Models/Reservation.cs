@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public class Reservation:BaseEntity
+    public class Reservation : BaseEntity
     {
         public DateTime RezervationDate { get; set; }
         public DateTime CheckIn { get; set; }// giriş tarihi datetime olarak verdim
@@ -21,6 +21,6 @@ namespace Project.ENTITIES.Models
         public virtual List<GuestDetail> GuestDetails { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual List<RoomService> RoomServices { get; set; }
-        
-        
+
+    }
 }

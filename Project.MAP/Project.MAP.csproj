@@ -52,16 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Options\BaseMap.cs" />
-    <Compile Include="Options\CustomerGuestMap.cs" />
+    <Compile Include="Options\GuestDetailMap.cs" />
+    <Compile Include="Options\ReceptionMap.cs" />
     <Compile Include="Options\CustomerMap.cs" />
     <Compile Include="Options\GuestMap.cs" />
     <Compile Include="Options\HouseKeeperMap.cs" />
-    <Compile Include="Options\OrderMap.cs" />
-    <Compile Include="Options\ReceptionMap.cs" />
-    <Compile Include="Options\ReceptionProfileMap.cs" />
     <Compile Include="Options\ReservationMap.cs" />
+    <Compile Include="Options\RoomDetailMap.cs" />
     <Compile Include="Options\RoomMap.cs" />
-    <Compile Include="Options\RoomReservationMap.cs" />
     <Compile Include="Options\RoomServiceMap.cs" />
     <Compile Include="Options\RoomTypeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,13 +9,12 @@ namespace Project.MAP.Options
 {
     public class GuestMap:BaseMap<Guest>
     {
-        public GuestMap()
+        public GuestMap() 
         {
             ToTable("Misafirler");
-            Property(x => x.FirstName).HasColumnName("Isim");
-            Property(x => x.LastName).HasColumnName("SoyIsim");
-            Property(x => x.ContactNuber).HasColumnName("İletişim Numarasi");
-            Property(x => x.TCKNo).HasColumnName("TCK No");
+            Property(x => x.FirstName).HasColumnName("İsim");
+            Property(x => x.LastName).HasColumnName("Soyisim");
+            Property(x => x.ContactNumber).HasColumnName("İletişim Numarası");
         }
     }
 }

@@ -1,0 +1,12 @@
+Bu proje bir Otel İşletmesi için N-Tier mimari paterni kullanılarak hazırlanması tasarlanmaktadır.
+Buradaki amaç müşterimizin isteklerine en doğru şekilde cevap verebilmek, bunun yanında projemizin esnekliğini ve sürdürülebilirliğini sağlamaktır. İlerleyen süreçlerde müşterimizin işletmesinde geliebilecek harici ihtiyaçlara da cevap vermesi hedeflenmiştir.
+Temel olarak projede 
+Project.ENTITIES, 
+Project.MAP, 
+Project.DAL, 
+Project.BLL 
+ve Project.WinUI olmak üzere 5 katman kulanılması planlanmaktadır. 
+Projemiz yapısında müşterinin isteği üzerine kullanılan ve temizlenmemiş odalar rezerve edilemeyecek, ancak temizlik işlemleri gerçekleştikten sonra rezervasyona açılacaktır.
+Bunun yanında, Oda servis şeklinde menümüz mevcut olacak ve bu menüden seçilen yemek ve içeceklerin kayıt altına alınıp fiyatlandırmaya eklenecektir.
+Projemizi tasarladığımız Butik otelimizde 3 ayrı tipte oda bulunmaktadır. Bunlar Stantdart size, Suit size ve King size'dır. Rezervasyon esnasında seçenek olarak müşterilere sunulabilmesi talep edilmiştir.
+İstekler ve elimizdeki veriler ışığında projemizin 13.03.2023 tarihinde teslim edilmesi öngörülmektedir. Herhangi bir teknik ve/veya dış kaynaklı aksıklık ön görülmemektedir. Oluşabilecek aksaklıklarda müşteri şeffaflıkla bilgilendirilecektir.

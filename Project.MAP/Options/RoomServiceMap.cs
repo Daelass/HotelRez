@@ -9,12 +9,13 @@ namespace Project.MAP.Options
 {
     public class RoomServiceMap:BaseMap<RoomService>
     {
-        public RoomServiceMap()
+        public RoomServiceMap() 
         {
             ToTable("Oda Servisleri");
-            Property(x =>x.Menu).HasColumnName("Menü");
-            Property(x =>x.Beverage).HasColumnName("İçecek");
-            Property(x=>x.Price).HasColumnName("Fiyat").HasColumnType("money");
+            Property(x => x.Menu).HasColumnName("Menü");
+            Property(x => x.Beverage).HasColumnName("İçecekler");
+            Property(x => x.Price).HasColumnName("Fiyat");
+            Property(x => x.RoomNumber).HasColumnName("Oda Numarası");
         }
     }
 }

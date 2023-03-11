@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class CustomerMap : BaseMap<Customer>
+    public class CustomerMap:BaseMap<Customer>
     {
-        public CustomerMap()
+        public CustomerMap() 
         {
-            ToTable("Musteriler");
-            Property(x =>x.FirstName).HasColumnName("İsim");
-            Property(x => x.LastName).HasColumnName("SoyIsim");
+            ToTable("Müşteriler");
+            Property(x => x.FirstName).HasColumnName("İsim");
+            Property(x => x.LastName).HasColumnName("Soyisim");
             Property(x => x.ContactNumber).HasColumnName("İletişim Numarası");
         }
     }

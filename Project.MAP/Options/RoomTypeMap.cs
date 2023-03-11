@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class RoomTypeMap : BaseMap<RoomType>
+    public class RoomTypeMap:BaseMap<RoomType>
     {
-        public RoomTypeMap()
+        public RoomTypeMap() 
         {
             ToTable("Oda Tipleri");
-            Property(x=> x.TypeName).HasColumnName("Oda Tipi");
-            Property(x => x.RoomPrice).HasColumnName("Oda Fiyati");
+            Property(x => x.TypeName).HasColumnName("Oda Tipi");
+            Property(x => x.PricePerNight).HasColumnName("Gecelik Ücret");
+            Property(x => x.Description).HasColumnName("Açıklama");
         }
     }
 }

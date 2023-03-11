@@ -9,11 +9,11 @@ namespace Project.MAP.Options
 {
     public class HouseKeeperMap:BaseMap<HouseKeeper>
     {
-        public HouseKeeperMap()
+        public HouseKeeperMap() 
         {
-            ToTable("Oda Temizliyecileri");
-            Property(x =>x.FirstName).HasColumnName("İsim");
-            Property(x => x.LastName).HasColumnName("Soyİsim");
+            ToTable("Oda Temizlik Servisleri");
+            Property(x => x.FirstName).HasColumnName("İsim");
+            Property(x => x.LastName).HasColumnName("Soyisim");
             Property(x => x.ContactNumber).HasColumnName("İletişim Numarası");
         }
     }

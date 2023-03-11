@@ -9,12 +9,13 @@ namespace Project.MAP.Options
 {
     public class ReservationMap:BaseMap<Reservation>
     {
-        public ReservationMap()
+        public ReservationMap() 
         {
-            ToTable("Rezarvasyonlar");
-            Property(x=>x.CheckIn).HasColumnName("Giriş Tarihi");
-            Property(x=>x.CheckOut).HasColumnName("Çıkış Tarihi");
-            
+            ToTable("Rezervasyonlar");
+            Property(x => x.RezervationDate).HasColumnName("Rezervasyon Tarihi");
+            Property(x => x.CheckIn).HasColumnName("Giriş");
+            Property(x => x.CheckOut).HasColumnName("Çıkış");
+            Property(x => x.TotalPrice).HasColumnName("Toplam Tutar");
         }
     }
 }

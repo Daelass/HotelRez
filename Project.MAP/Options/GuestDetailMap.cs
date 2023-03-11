@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class RoomReservationMap:BaseMap<RoomDetail>
+    public class GuestDetailMap:BaseMap<GuestDetail>
     {
-        public RoomReservationMap()
+        public GuestDetailMap() 
         {
-            ToTable("Oda Rezervasyonlari");
+            ToTable("Misafir Detayları");
+
+            //Guest ve Rezervasyon arasında ki çoka çok ilişkinin ikinci fazı
+
             Ignore(x => x.ID);
             HasKey(x => new
             {
-                x.RoomID,
+                x.GuestID,
                 x.ReservationID
             });
         }

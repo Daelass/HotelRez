@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class ReceptionMap :BaseMap<Reception>
+    public class ReceptionMap:BaseMap<Reception>
     {
-        public ReceptionMap()
+        public ReceptionMap() 
         {
-            ToTable("Recepsionlar");
-            Property(x =>x.UserName).HasColumnName("Kullanıcı Adı");
-            Property(x =>x.Password).HasColumnName("Şifre");
-            HasOptional(x => x.ReceptionProfile).WithRequired(x => x.Reception);
+            ToTable("Resepsiyonlar");
+            Property(x => x.UserName).HasColumnName("Kullanıcı Adı");
+            Property(x => x.Password).HasColumnName("Şifre");
+            Property(x => x.EmployeeFirstName).HasColumnName("Personel İsim");
+            Property(x => x.EmployeeLastName).HasColumnName("Personel Soysisim");
+            Property(x => x.ReceptionNumber).HasColumnName("Resepsiyon Numarası");
         }
     }
 }
