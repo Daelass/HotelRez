@@ -10,11 +10,11 @@ namespace Project.ENTITIES.Models
     {   // bu Classla müşterinin rezervasyonu başkaları adına yaptıgı durumlarda, odada konaklayacak kisilerin bilgileri alınacaktır 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string  ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string TCKNo { get; set; }
-        
-        
-        public virtual List<GuestDetail> GuestDetails { get;} // Guest ve Reservation Classlarının Junction table listesi
+        public string RoomNumber { get; set; }
+
+        public virtual List<GuestDetail> GuestDetails { get; set; } // Guest ve Reservation Classlarının Junction table listesi
         
         
         

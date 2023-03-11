@@ -16,10 +16,10 @@ namespace Project.ENTITIES.Models
         
 
         //Relational Properties
-        public virtual List<RoomService> RoomServices{ get; set; } //Konugun istediği OdaServisi listesi 
+        public virtual List<RoomService> RoomServices{ get; set; } // Odaya istenen RoomServislerin listesi
         public virtual List<RoomType> RoomTypes{ get; set; }
         public virtual HouseKeeper HouseKeeper { get; set; }
-        public virtual List<RoomDetail> RoomDetails { get; set; } // Reservation Room Claslarının Junction Table listesi
+        public virtual List<RoomDetail> RoomDetails { get; set; } // Reservation Room Claslarının Junction Table'ı
 
 
 

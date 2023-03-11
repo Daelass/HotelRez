@@ -12,7 +12,7 @@ namespace Project.ENTITIES.Models
         public string Beverage { get; set; }
         public decimal Price { get; set; }  
         public string RoomNumber { get; set; } 
-        public int ReservationID { get; set; }
+        public int? ReservationID { get; set; }
        
 
         // relational

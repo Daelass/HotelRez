@@ -10,6 +10,7 @@ namespace Project.ENTITIES.Models
     {   // Room and Reservation is ManyToMany
         public int RoomID { get; set; }
         public int ReservationID { get; set;}
+
         //Relational Properties
         public virtual Room Room { get; set; }
         public virtual Reservation Reservation { get; set; }
